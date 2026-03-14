@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900;
+  font-family: 'Noto Sans SC', 'Inter', sans-serif;
+  background-image:
+    radial-gradient(circle at 8% 6%, rgba(79, 70, 229, 0.08), transparent 30%),
+    radial-gradient(circle at 95% 90%, rgba(148, 163, 184, 0.1), transparent 28%);
+}
+
+.glass {
+  @apply border border-white/70 bg-white/72 backdrop-blur-xl;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
+}
